@@ -1,0 +1,146 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp 06</title>
+</head>
+
+<body>
+    <h1>CSS</h1>
+    <H2>1.1¿Qué significa CSS?</H2>
+    <P>CSS significa Cascading Style Sheets o Hojas de Estilo en Cascada. Se utiliza para describir la apariencia y el
+        formato de un documento escrito en HTML.</P>
+    <H2>1.2¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS? </H2>
+    <p>CSS se utiliza para diseñar páginas web, definiendo cómo se ven elementos como texto, imágenes y otros
+        componentes. Es interpretado por navegadores web como Chrome, Firefox, Safari, etc.</p>
+    <h2>1.3¿A qué se llama regla de CSS?</h2>
+    <p>Es un patrón de elementos y otros términos que indican al navegador qué elementos HTML se seleccionan para
+        aplicarles una regla que incluye los valores de las propiedades CSS.</p>
+    <h2>1.4¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva
+        explicar sus elementos.</h2>
+    <img src="unnamed.png">
+
+    <h2>Lista Descriptiva de Elementos de CSS</h2>
+    <dl>
+        <dt>Selector</dt>
+        <dd>Indica qué elementos del HTML serán afectados por las reglas CSS.</dd>
+        <dt>Propiedad</dt>
+        <dd>Es la característica que se desea modificar, como el color, el tamaño de la fuente o el margen.</dd>
+        <dt>Valor</dt>
+        <dd>El valor asignado a una propiedad, que define cómo se verá el elemento.</dd>
+        <dt>Regla CSS</dt>
+        <dd>Es la combinación de un selector, una propiedad y un valor que aplica un estilo a los elementos
+            seleccionados.</dd>
+        <dt>Hoja de Estilo</dt>
+        <dd>Es un archivo separado (o un bloque dentro del HTML) donde se colocan las reglas CSS que definen el diseño
+            de una página.</dd>
+        <dt>Especificidad</dt>
+        <dd>Es el mecanismo que CSS usa para decidir cuál estilo aplicar cuando hay múltiples reglas que afectan a un
+            mismo elemento.</dd>
+        <dt>Cascada</dt>
+        <dd>El comportamiento de CSS que decide cuál estilo aplicar cuando varias reglas afectan a un mismo elemento,
+            basado en la especificidad y el orden de las reglas.</dd>
+    </dl>
+    <h2>1.5¿Qué es un selector en CSS?</h2>
+    <p>Los selectores CSS son herramientas utilizadas para definir el estilo que quieres dar a tus elementos en CSS.</p>
+    <h2>1.6 dentificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h2>
+    <p>ID: Se aplica a un solo elemento. Usa #.</p>
+    <p>Clase: Se aplica a varios elementos. Usa ..</p>
+    <p>Universal: Aplica estilos a todos los elementos. Usa *.</p>
+    <p>Etiqueta: Aplica estilos a elementos específicos como p, h1.</p>
+    <P>Descendente: Aplica estilos a elementos dentro de otros elementos.</p>
+    <h2>1.7 Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS?</h2>
+    <p>El funcionamiento del CSS se basa en cómo los estilos son aplicados a los elementos de HTML.</p>
+    <h3>Funcionamiento de CSS</h3>
+    <dl>
+        <dt>Carga del HTML</dt>
+        <dd>El navegador primero carga el documento HTML que contiene el contenido estructurado de la página web.</dd>
+
+        <dt>Carga del CSS</dt>
+        <dd>El navegador también carga y procesa las hojas de estilo CSS vinculadas al HTML o incluidas internamente.
+        </dd>
+
+        <dt>Interpretación de Reglas CSS</dt>
+        <dd>Las reglas CSS, que incluyen selectores y propiedades, son interpretadas para aplicar los estilos a los
+            elementos HTML correspondientes.</dd>
+
+        <dt>Aplicación del Estilo</dt>
+        <dd>El navegador aplica los estilos CSS a los elementos seleccionados, cambiando su apariencia visual según lo
+            especificado en las reglas.</dd>
+
+        <dt>Cascada</dt>
+        <dd>Cuando hay múltiples reglas aplicables a un mismo elemento, el navegador decide cuál regla aplicar usando la
+            especificidad y el orden de las reglas en el archivo CSS.</dd>
+
+        <dt>Renderizado de la Página</dt>
+        <dd>El navegador muestra la página web en pantalla con los estilos ya aplicados, permitiendo una experiencia
+            visual consistente y organizada.</dd>
+    </dl>
+
+    <h2>1.8 ¿Cuáles son las tres formas para vincular CSS con HTML?</h2>
+    <p>1.CSS Externo: Utilizas un archivo CSS separado que se vincula al HTML. Este método es el más común, ya que
+        permite separar la estructura (HTML) del estilo (CSS).</p>
+    <p>2.CSS Interno: El código CSS se coloca dentro de la misma página HTML, pero dentro de la etiqueta style en el
+        head del documento.</p>
+    <p>3.CSS en línea: Se aplican los estilos directamente dentro de las etiquetas HTML mediante el atributo style.</p>
+    <h2>1.9 CSS Zen Garden</h2>
+    <p>A pesar de tener el mismo HTML, los diferentes archivos CSS permiten que la página se vea completamente
+        diferente, lo que demuestra el poder del CSS para cambiar el diseño sin modificar el contenido.</p>
+    <h2>2.0</h2>
+    <h3>Propiedades de CSS</h3>
+
+    <dl>
+        <dt>color</dt>
+        <dd>Define el color del texto.</dd>
+        <dd><strong>Valores posibles:</strong> Nombre de color (por ejemplo, "red"), código HEX (por ejemplo,
+            "#ff0000"), RGB (por ejemplo, "rgb(255, 0, 0)").</dd>
+
+        <dt>background-color</dt>
+        <dd>Define el color de fondo de un elemento.</dd>
+        <dd><strong>Valores posibles:</strong> Nombre de color, código HEX, RGB.</dd>
+
+        <dt>font-size</dt>
+        <dd>Define el tamaño de la fuente del texto.</dd>
+        <dd><strong>Valores posibles:</strong> px, em, rem, %, etc. (por ejemplo, "16px" o "1.5em").</dd>
+
+        <dt>font-weight</dt>
+        <dd>Define el grosor de la fuente del texto (si es normal o en negrita).</dd>
+        <dd><strong>Valores posibles:</strong> normal, bold, bolder, lighter, valores numéricos (100-900).</dd>
+
+        <dt>font-style</dt>
+        <dd>Define el estilo de la fuente del texto (si es cursiva o normal).</dd>
+        <dd><strong>Valores posibles:</strong> normal, italic, oblique.</dd>
+
+        <dt>font-family</dt>
+        <dd>Define el tipo de letra a utilizar para el texto.</dd>
+        <dd><strong>Valores posibles:</strong> Nombre de fuentes, como "Arial", "Helvetica", o "Times New Roman".
+            También se pueden usar familias de fuentes como "serif" o "sans-serif".</dd>
+
+        <dt>text-align</dt>
+        <dd>Define la alineación horizontal del texto.</dd>
+        <dd><strong>Valores posibles:</strong> left, right, center, justify.</dd>
+
+        <dt>text-decoration</dt>
+        <dd>Define la decoración del texto, como subrayado o tachado.</dd>
+        <dd><strong>Valores posibles:</strong> underline, line-through, overline, none.</dd>
+
+        <dt>text-transform</dt>
+        <dd>Define la transformación del texto, como ponerlo en mayúsculas o minúsculas.</dd>
+        <dd><strong>Valores posibles:</strong> uppercase, lowercase, capitalize, none.</dd>
+
+        <dt>letter-spacing</dt>
+        <dd>Define el espacio entre letras.</dd>
+        <dd><strong>Valores posibles:</strong> Un valor en px, em, rem (por ejemplo, "2px" o "0.1em").</dd>
+
+        <dt>line-height</dt>
+        <dd>Define la altura de línea del texto.</dd>
+        <dd><strong>Valores posibles:</strong> Un valor numérico, en px, em o %. Ejemplo: "1.5", "20px", "150%".</dd>
+    </dl>
+    <h2>2.1 Crea un archivo HTML con la estructura básica de una página web, agregar como título “Práctica de CSS”. Crea un encabezado de página con el mismo título, agrega un subtítulo con tu Nombre y Apellido.</h2>
+    <h2>2.2 Crea una hoja de estilos CSS y vincularla a tu archivo HTML.</h2>
+    <h2>2.3 me rindo.</h2>
+</body>
+
+</html>
